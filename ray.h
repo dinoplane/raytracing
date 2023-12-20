@@ -6,8 +6,8 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtx/string_cast.hpp>
 
-using point3 = glm::vec3;
-using vec3 = glm::vec3;
+using point3 = glm::dvec3;
+using vec3 = glm::dvec3;
 
 class ray {
     public:
@@ -17,7 +17,7 @@ class ray {
         point3 origin() const { return orig; }
         vec3 direction() const { return dir; }
 
-        point3 at(float t) const {
+        point3 at(double t) const {
             return orig + dir * t;
         }
 

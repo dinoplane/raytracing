@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -Wall -Wextra -std=c++17
 
-SRC = main.cpp color.h hittable.h hittable_list.h ray.h rtweekend.h sphere.h
+SRC = main.cpp
 EXECUTABLE = raytracer
 
 all: $(EXECUTABLE)
